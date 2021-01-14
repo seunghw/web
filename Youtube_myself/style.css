@@ -1,0 +1,363 @@
+:root {
+  /* Color */
+  --white-color: #fff;
+  --black-color: #140a00;
+  --blue-color: #045fd4;
+  --red-color: #ff0000;
+  --grey-dark-color: #909090;
+  --grey-liget-color: #e0e0e0;
+
+  /* Size */
+  --padding: 12px;
+  --padding2: 24px;
+  --padding3: 36px;
+  --avatar-size: 36px;
+
+  /* Font Size */
+  --font-large: 18px;
+  --font-medium: 14px;
+  --font-small: 12px;
+  --font-micro: 10px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--padding);
+  background-color: var(--white-color);
+  position: sticky;
+  top: 0;
+}
+
+.container {
+  display: flex;
+}
+
+.container .item1 {
+  display: flex;
+  flex-direction: column;
+  flex: 3 1 0;
+}
+.container .item2 {
+  flex: 1 1 0;
+}
+
+header .left .logo i {
+  margin-left: var(--padding);
+}
+
+header .left .logo .fab {
+  color: var(--red-color);
+}
+
+button {
+  background-color: var(--white-color);
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+header .mid {
+  display: flex;
+  align-items: center;
+}
+
+header .mid .search {
+  background-color: var(--white-color);
+  height: 28px;
+  width: 425px;
+  border: 1px solid var(--grey-dark-color);
+}
+
+input {
+  width: 360px;
+  height: 26px;
+  padding: 5px;
+  border: 0px;
+  outline: none;
+  float: left;
+  text-align: left;
+}
+
+header .mid .search .bar {
+  width: 63px;
+  height: 100%;
+  border: 0px;
+  background-color: rgb(248, 248, 248);
+  color: var(--grey-dark-color);
+  float: right;
+}
+
+header .mid .mic i {
+  margin-left: var(--padding2);
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.right .fas {
+  margin-right: var(--padding2);
+}
+
+.right .loginBtn {
+  background-color: var(--white-color);
+  color: var(--blue-color);
+  border: 1px solid var(--blue-color);
+  width: 80px;
+  height: 30px;
+}
+
+section {
+  margin-left: 50px;
+  margin-top: var(--padding2);
+}
+
+.player {
+  padding: 0px;
+  text-align: center;
+  background-color: var(--black-color);
+}
+
+.player video {
+  /* width: 1350px;
+  height: 760px;
+  max-width: 3000px;*/
+  width: 50%;
+  height: 100%;
+  max-width: 700px;
+  max-height: 700px;
+}
+
+.boxinfo .top_info {
+  font-size: var(--font-large);
+}
+
+.boxinfo .under_info {
+  display: flex;
+  justify-content: space-between;
+  color: var(--grey-dark-color);
+  align-items: center;
+}
+
+.boxinfo .under_info .view_date {
+  font-size: var(--font-small);
+}
+
+.boxinfo .under_info .actions {
+  display: flex;
+  justify-content: space-around;
+}
+
+.boxinfo .under_info .actions button {
+  color: var(--grey-dark-color);
+  margin: calc(var(--padding) / 2);
+  font-size: var(--font-small);
+}
+
+.boxinfo .under_info .actions button i {
+  font-size: 16px;
+  margin: calc(var(--padding) / 2);
+}
+
+.channal {
+  padding: var(--padding);
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--grey-liget-color);
+}
+
+.channal .metadata {
+  display: flex;
+  align-items: center;
+}
+
+.channal .metadata img {
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+  margin-right: var(--padding);
+  border-radius: 50%;
+}
+
+.channal .metadata .name {
+  display: flex;
+  flex-direction: column;
+}
+
+.channal .metadata .name .title {
+  font-size: var(--font-medium);
+}
+
+.channal .metadata .name .sub {
+  font-size: var(--font-small);
+  color: var(--grey-dark-color);
+}
+
+.channal button {
+  width: 65px;
+  height: 35px;
+  border: 1px;
+  border-radius: 5%;
+  background-color: var(--red-color);
+  color: var(--white-color);
+}
+
+.channalex {
+  display: flex;
+  border-bottom: 1px solid var(--grey-liget-color);
+}
+
+.channalex span {
+  padding: var(--padding);
+  font-size: var(--font-medium);
+  margin-left: 37px;
+}
+
+.boxreple .menu {
+  font-size: var(--font-medium);
+  margin-bottom: var(--padding2);
+}
+
+.boxreple .menu span {
+  margin-right: var(--padding2);
+}
+
+.boxreple .menu i {
+  margin-right: calc(var(--padding) / 2);
+}
+
+.boxreple .user {
+  display: flex;
+}
+
+.boxreple .user img {
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+  border-radius: 50%;
+  margin-right: var(--padding);
+}
+
+.boxreple input {
+  width: 100%;
+  border-bottom: 1px solid var(--grey-liget-color);
+
+  margin-bottom: var(--padding2);
+}
+
+.boxreple .item {
+  display: flex;
+  margin-bottom: var(--padding2);
+}
+
+.boxreple .item img {
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+  border-radius: 50%;
+  margin-right: var(--padding);
+  margin-top: var(--padding);
+}
+.boxreple .item .info {
+  margin-top: var(--padding);
+}
+
+.boxreple .item .info .user {
+  align-content: center;
+  margin-bottom: calc(var(--padding) / 2);
+}
+
+.boxreple .item .info .user .name {
+  font-size: var(--font-medium);
+}
+
+.boxreple .item .info .user .date {
+  margin-top: 2px;
+  color: var(--grey-dark-color);
+  font-size: var(--font-small);
+  margin-left: calc(var(--padding) / 2);
+}
+
+.boxreple .item .info .contents {
+  font-size: var(--font-medium);
+}
+
+.block .more {
+  margin-top: 2px;
+  font-size: var(--font-medium);
+}
+
+.block .action {
+  margin-top: var(--padding);
+  margin-bottom: var(--padding);
+  display: flex;
+}
+.block .action li {
+  margin-right: var(--padding2);
+}
+.block .action i,
+.block i {
+  margin-right: var(--padding);
+}
+
+.block .morereple span {
+  font-size: var(--font-small);
+}
+
+.block .morereple {
+  color: var(--blue-color);
+}
+
+.item2 {
+  margin-right: 80px;
+}
+
+.item2 .upNext .item {
+  display: flex;
+  padding: 0 var(--padding);
+  margin-bottom: calc(var(--padding) / 2);
+}
+
+.item2 .upNext .item .img {
+  flex: 1 1 55%;
+  margin-right: var(--padding);
+}
+
+.item2 .upNext .item .img img {
+  width: 100%;
+  height: 110px;
+}
+
+.item2 .upNext .item .info {
+  flex: 1 1 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.item2 .upNext .item .moreBtn {
+  height: 100%;
+  flex: 1 1 5%;
+}
+
+.item2 .upNext .item .info .title {
+  font-size: var(--font-small);
+}
+
+.upNext .item .info .name,
+.upNext .item .info .views {
+  font-size: var(--font-micro);
+  color: var(--grey-dark-color);
+}
