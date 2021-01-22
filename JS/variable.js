@@ -86,7 +86,8 @@ console.log(nAn);
 const bigInt = 1234567890123456789012345678901234567890n; // over (-2**53) ~ 2*53)
 console.log(`value: ${bigInt}, type: ${typeof bigInt}`);
 
-// string
+
+// string 
 const char = 'c';
 const brendan = 'brendan';
 const greeting = 'hello ' + brendan;

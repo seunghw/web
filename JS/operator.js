@@ -1,3 +1,4 @@
+
 // 1. String concatenation
 console.log('my' + ' cat');
 console.log('1' + 2);
@@ -57,6 +58,8 @@ console.log(`and: ${value1 && value2 && check()}`);
 // often used to compress long if-statement
 // nullableObject && nullableObject.something
 
+
+
 function check() {
   for (let i = 0; i < 10; i++) {
     //wasting time
@@ -67,7 +70,7 @@ function check() {
 
 // ! (not)
 console.log(!value1);
-/*
+
 // 7. Equality
 const stringFive = '5';
 const numberFive = 5;
@@ -76,7 +79,7 @@ const numberFive = 5;
 console.log(stringFive == numberFive);
 console.log(stringFive != numberFive);
 
-// === strict equality, no type conversion
+// === strict equality, no type conversion 이건 타입까지 확인해서 웬만하면 이걸로 검사하는 게 좋음
 console.log(stringFive === numberFive);
 console.log(stringFive !== numberFive);
 
@@ -95,6 +98,7 @@ console.log('' == false);
 console.log('' === false);
 console.log(null == undefined);
 console.log(null === undefined);
+
 
 // 8. Conditional operators: if
 // if, else if, else
@@ -171,6 +175,7 @@ for (let i = 0; i < 11; i++) {
   console.log(`q1. ${i}`);
 }
 
+
 // Q2. iterate from 0 to 10 and print numbers until reaching 8 (use break)
 for (let i = 0; i < 11; i++) {
   if (i > 8) {
@@ -178,4 +183,5 @@ for (let i = 0; i < 11; i++) {
   }
   console.log(`q2. ${i}`);
 }
-*/
+
+
